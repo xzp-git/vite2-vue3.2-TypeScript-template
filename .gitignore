@@ -1,0 +1,6 @@
+node_modules
+pnpm-debug.log*
+.vscode/*
+sh.exe.stackdump
+dist
+coverage
