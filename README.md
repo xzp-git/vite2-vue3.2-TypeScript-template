@@ -1,3 +1,11 @@
+# 模板使用初始化
+
+- 使用模板的时候 要先进行初始化`git`仓库，`git init`
+- 安装依赖 `pnpm i`
+- 配置`git hooks`，按顺序执行下面命令
+  - `npx mrm lint-staged`
+  - `npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"`
+
 # Vite2 + Vue3 + Typescript 开发环境
 
 ## 1. 安装 Vite
@@ -569,6 +577,16 @@ module.exports = {
   }
 }
 ```
+
+### 7.2.5 安装 commitizen
+
+`pnpm i -D commitizen`
+
+### 7.2.6 安装提交时要使用的规则
+
+提交时使用`git cz` 代替`git commit`
+
+`pnpm i cz-conventional-changelog -D`
 
 ## 8.配置别名
 
